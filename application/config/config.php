@@ -1,9 +1,9 @@
 <?php
 //配置文件
 return [
-    'host'      =>  'localhost',
+    'host'      =>  '120.79.255.111',
     'user'      =>  'root',
-    'password'  =>  'root',
+    'password'  =>  'myroot',
     'dbname'    =>  'shopcz',
     'port'      =>  '3306',
     'charset'   =>  'utf8',
