@@ -18,8 +18,8 @@ class Framework{
         define("DS",DIRECTORY_SEPARATOR);
         define("ROOT", getcwd() . DS);
         define("APP_PATH", ROOT . 'application' . DS);
-        define("FRAMEWORK_PATH", ROOT . 'application' . DS);
-        define("PUBLIC_PATH", ROOT . 'application' . DS);
+        define("FRAMEWORK_PATH", ROOT . 'framework' . DS);
+        define("PUBLIC_PATH", ROOT . 'public' . DS);
         define("CONFIG_PATH", APP_PATH . 'config' . DS);
         define("CONTROLLER_PATH",APP_PATH . 'controllers' . DS);
         define("MODEL_PATH", APP_PATH . 'models' . DS);
@@ -36,6 +36,13 @@ class Framework{
         //设置当前控制器和视图目录
         define("CUR_CONTROLLER_PATH",CONTROLLER_PATH . PLATFORM . DS);
         define("CUR_VIEW_PATH",VIEW_PATH . PLATFORM . DS);
+
+        //载入配置文件
+        $GLOBALS['config'] = include CONFIG_PATH . 'config.php';
+        //载入核心类
+        include CORE_PATH . "Controller.class.php";
+        include CORE_PATH . "Model.class.php";
+        include DB_PATH . "Mysql.class.php";
 
 //        define("CSS_PATH",PUBLIC_PATH . 'css' .DS);
 //        define("IMG_PATH",PUBLIC_PATH . 'images' .DS);
