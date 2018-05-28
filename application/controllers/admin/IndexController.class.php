@@ -1,7 +1,7 @@
 <?php
 
 //后台首页控制器
-class IndexController extends Controller{
+class IndexController extends BaseController{
     //生成验证码
     public function codeAction()
     {

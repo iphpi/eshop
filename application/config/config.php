@@ -7,6 +7,7 @@ return [
     'dbname'    =>  'shopcz',
     'port'      =>  '3306',
     'charset'   =>  'utf8',
-    'prefix'    =>  'cz_'
+    'prefix'    =>  'cz_',
+    'log'       =>  'true'
 
 ];

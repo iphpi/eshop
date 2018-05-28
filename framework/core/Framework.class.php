@@ -44,6 +44,8 @@ class Framework{
         include CORE_PATH . "Model.class.php";
         include DB_PATH . "Mysql.class.php";
 
+        session_start();//开启session
+
 //        define("CSS_PATH",PUBLIC_PATH . 'css' .DS);
 //        define("IMG_PATH",PUBLIC_PATH . 'images' .DS);
 //        define("JS_PATH",PUBLIC_PATH . 'js' .DS);

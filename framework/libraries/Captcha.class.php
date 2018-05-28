@@ -1,6 +1,6 @@
 <?php
 class Captcha{
-	private $charset = 'abcdefghkmnprstuvwxyzABCDEFGHKMNPRSTUVWXYZ23456789';    //随机因子，
+	private $charset = 'abcdABCDE23456789';    //随机因子，
     private $code;                     //验证码字符串
     private $codelen = 4;              //验证码长度
     private $width = 150;              //宽度
@@ -11,7 +11,7 @@ class Captcha{
     private $fontcolor;                //指定字体颜色
 
     //构造方法初始化
-    public function __construct($codelen=4,$width=150,$height=40,$fontsize = 20,$font="elephant.ttf") {
+    public function __construct($codelen=4,$width=150,$height=40,$fontsize = 25,$font="elephant.ttf") {
 		$this->codelen = $codelen;
 		$this->width = $width;
 		$this->height = $height;

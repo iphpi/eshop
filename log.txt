@@ -1,0 +1,21 @@
+﻿[2018-05-28 21:27:47]set names utf8
+[2018-05-28 21:27:47]DESC cz_admin
+[2018-05-28 21:27:47]SELECT * FROM cz_admin WHERE 
+        admin_name='test' AND password='098f6bcd4621d373cade4e832627b4f6' LIMIT 1
+[2018-05-28 21:28:33]set names utf8
+[2018-05-28 21:28:33]DESC cz_admin
+[2018-05-28 21:28:33]SELECT * FROM cz_admin WHERE 
+        admin_name='test' AND password='test' LIMIT 1
+[2018-05-28 21:28:39]set names utf8
+[2018-05-28 21:28:39]DESC cz_admin
+[2018-05-28 21:28:39]SELECT * FROM cz_admin
+[2018-05-28 21:28:43]set names utf8
+[2018-05-28 21:28:43]DESC cz_category
+[2018-05-28 21:28:43]SELECT * FROM cz_category
+[2018-05-28 21:29:09]set names utf8
+[2018-05-28 21:29:09]DESC cz_category
+[2018-05-28 21:29:09]SELECT * FROM cz_category
+[2018-05-28 21:29:09]DELETE FROM `cz_category` WHERE `cat_id`=16
+[2018-05-28 21:29:19]set names utf8
+[2018-05-28 21:29:19]DESC cz_category
+[2018-05-28 21:29:19]SELECT * FROM cz_category

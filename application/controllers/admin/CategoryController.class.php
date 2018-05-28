@@ -5,7 +5,7 @@
  * Date: 2018/5/27
  * Time: 20:35
  */
-class CategoryController extends Controller{
+class CategoryController extends BaseController{
     public function indexAction(){
         //获取所有的分类
         $categoryModel = new CategoryModel('category');
@@ -28,6 +28,9 @@ class CategoryController extends Controller{
         $data['is_show'] = trim($_POST['is_show']);
         $data['cat_desc'] = trim($_POST['cat_desc']);
         $data['parent_id'] = trim($_POST['parent_id']);
+        //批量转义,引入辅助函数
+        $this->helper('input');
+        $data = deepspecialchars($data);
         //2.相应的验证和处理
         if($data['cat_name'] == ''){
             $this->jump('index.php?p=admin&c=category&a=add','分类名称不能为空');
