@@ -30,7 +30,6 @@ class IndexController extends Controller{
         //实例化模型
         $adminModel = new AdminModel('admin');
         $admins = $adminModel->getAdmins();
-        var_dump($admins);
         include CUR_VIEW_PATH . 'main.html';
     }
 }
